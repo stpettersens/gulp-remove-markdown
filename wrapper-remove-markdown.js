@@ -1,7 +1,7 @@
 var rmd = require('remove-markdown');
 
 module.exports = {
-  removeMarkdown: function(file, function) {
-      return rmd(file);
-  }
+  removeMarkdown: function(file, callback) {
+      return null, rmd(file);
+  });
 };
