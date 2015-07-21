@@ -3,9 +3,9 @@ var gutil = require('gulp-util'),
   through = require('through2'),
       rmd = require('remove-markdown');
 
-function removeMarkdown(file, callback) {
-  if(file == null) return callback(new Error('No file specified'), null);
-  return callback(null, rmd(file));
+function removeMarkdown(file, cb) {
+  if(file == null) return cb(new Error('No file specified'), null);
+  return cb(null, rmd(file));
 }
 
 module.exports = function(ext) {
