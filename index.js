@@ -2,7 +2,7 @@
 var gutil = require('gulp-util'),
   through = require('through2');
 
-var removeMarkdown = require('wrapper-remove-markdown');
+var removeMarkdown = require('./wrapper-remove-markdown');
 
 module.exports = function(ext) {
   return through.obj(function(file, enc, cb) {
