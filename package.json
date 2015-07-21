@@ -1,9 +1,9 @@
 {
   "name": "gulp-remove-markdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp plug-in to remove Markdown from a file",
   "license": "MIT",
-  "repository": "http://github.com/stpettersens/gulp-markdown",
+  "repository": "http://github.com/stpettersens/gulp-remove-markdown",
   "author": {
     "name": "Sam Saint-Pettersen",
     "email": "s.stpettersen+github@gmail.com"
