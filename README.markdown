@@ -19,5 +19,7 @@ gulp.task('default', function () {
 
 ### Attribution
 
-I based this plug-in on the structure of [gulp-markdown](https://github.com/sindresorhus/gulp-markdown) by
+* This plug-in is based on the structure of [gulp-markdown](https://github.com/sindresorhus/gulp-markdown) by
 Sindre Sorhus.
+
+* This plug-in uses [remove-markdown] by Stian Grytøyr.
