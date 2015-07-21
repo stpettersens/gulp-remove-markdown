@@ -1,11 +1,11 @@
 ### gulp-remove-markdown
 > Gulp plug in to remove Markdown from a file (via [remove-markdown](https://github.com/stiang/remove-markdown)). 
 
-Install:
+##### Install:
 
     $ npm install --save-dev gulp-markdown
 
-Usage:
+##### Usage:
 ```js
 var gulp = require('gulp'),
 removeMarkdown = require('gulp-remove-markdown');
@@ -15,3 +15,9 @@ gulp.task('default', function () {
 		.pipe(removeMarkdown())
 		.pipe(gulp.dest('dist'));
 });
+```
+
+### Attribution
+
+I based this plug-in on the structure of [gulp-markdown](https://github.com/sindresorhus/gulp-markdown) by
+Sindre Sorhus.
