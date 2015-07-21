@@ -25,11 +25,9 @@ module.exports = function(ext) {
         cb(new gutil.PluginError('gulp-remove-markdown', err, {fileName: file.path}));
         return;
       }
-
       file.contents = new Buffer(data);
       if(ext == null) ext = '.txt';
       file.path = gutil.replaceExtension(file.path, ext);
-
       cb(null, file);
     });
   });

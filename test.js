@@ -4,20 +4,28 @@ var assert = require('assert'),
 
 var removeMarkdown = require('./');
 
-it('should strip Markdown out of a file', function(cb) {
-  var stream = removeMarkdown();
+describe('Test gulp-remove-markdown plug-in', function() {
+  it('Should strip Markdown out of a file', function(done) {
+    var stream = removeMarkdown();
 
-  stream.once('data', function(file) {
-    assert.equal(file.relative, 'test.txt');
-    assert.equal(file.contents.toString(), 'foo');
+    stream.once('data', function(file) {
+      assert.equal(file.relative, 'test.txt');
+      assert.equal(file.contents.toString(), 'foo');
+    });
+
+    stream.on('end', done);
+
+    stream.write(new gutil.File({
+      path: 'test.markdown',
+      contents: new Buffer('### foo')
+    }));
+
+    stream.end();
   });
 
-  stream.on('end', cb);
-
-  stream.write(new gutil.File({
-    path: 'test.markdown',
-    contents: new Buffer('### foo')
-  }));
-
-  stream.end();
+  it('Should throw an Error when file isn\'t specified', function(done) {
+    var rmd = removeMarkdown();
+    console.log(rmd);
+    done();
+  });
 });
