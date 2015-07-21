@@ -8,7 +8,7 @@ it('should strip Markdown out of a file', function(cb) {
   var stream = removeMarkdown();
 
   stream.once('data', function(file) {
-    assert.equal(file.relative, 'test.markdown');
+    assert.equal(file.relative, 'test.txt');
     assert.equal(file.contents.toString(), 'foo');
   });
 
