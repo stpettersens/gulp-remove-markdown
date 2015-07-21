@@ -24,8 +24,19 @@ describe('Test gulp-remove-markdown plug-in', function() {
   });
 
   it('Should throw an Error when file isn\'t specified', function(done) {
-    var rmd = removeMarkdown();
-    console.log(rmd);
-    done();
+    var stream = removeMarkdown();
+
+    stream.once('data', function(file) {
+      assert.equal(file, null);
+    });
+
+    stream.on('end', done);
+
+    stream.write(new gutil.File({
+      path: null,
+      contents: null
+    }));
+
+    stream.end();
   });
 });
