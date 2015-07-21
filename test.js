@@ -32,7 +32,11 @@ describe('Test gulp-remove-markdown plug-in', function() {
 
     stream.on('end', done);
 
-    stream.write(null);
+    stream.write(new gutil.File({
+      path: null,
+      contents: null
+    }));
+
     stream.end();
   });
 });
