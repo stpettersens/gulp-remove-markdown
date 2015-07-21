@@ -1,8 +1,12 @@
 'use strict';
 var gutil = require('gulp-util'),
-  through = require('through2');
+  through = require('through2'),
+      rmd = require('remove-markdown');
 
-var rmd = require('./wrapper-remove-markdown');
+function removeMarkdown(file, callback) {
+  if(file == null) return callback(new Error('No file specified'), null);
+  return callback(null, rmd(file));
+}
 
 module.exports = function(ext) {
   return through.obj(function(file, enc, cb) {
@@ -16,7 +20,7 @@ module.exports = function(ext) {
       return;
     }
 
-    rmd.removeMarkdown(file.contents.toString(), function(err, data) {
+    removeMarkdown(file.contents.toString(), function(err, data) {
       if(err) {
         cb(new gutil.PluginError('gulp-remove-markdown', err, {fileName: file.path}));
         return;
