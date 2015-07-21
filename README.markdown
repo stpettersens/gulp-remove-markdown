@@ -12,7 +12,7 @@ removeMarkdown = require('gulp-remove-markdown');
 
 gulp.task('default', function () {
 	return gulp.src('README.markdown')
-		.pipe(removeMarkdown())
+		.pipe(removeMarkdown()) // removeMarkdown(ext, options)
 		.pipe(gulp.dest('dist'));
 });
 ```
