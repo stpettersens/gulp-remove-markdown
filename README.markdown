@@ -3,7 +3,7 @@
 
 ##### Install:
 
-    $ npm install --save-dev gulp-markdown
+    $ npm install --save-dev gulp-remove-markdown
 
 ##### Usage:
 ```js
