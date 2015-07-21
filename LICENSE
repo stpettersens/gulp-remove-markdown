@@ -1,4 +1,5 @@
-The MIT License (MIT)
+gulp-remove-markdown
+Gulp plug-in to remove Markdown from a file (via remove-markdown).
 
 Copyright (c) 2015 Sam Saint-Pettersen
 
