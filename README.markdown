@@ -19,8 +19,8 @@ gulp.task('default', function () {
 
 ##### Options
 
-*ext*: File extension to use for Markdown stripped output.
-*options*: Options [supported by remove-markdown](http://bit.ly/1LrOKG4).
+* *ext*: File extension to use for Markdown stripped output.
+* *options*: Options [supported by remove-markdown](http://bit.ly/1LrOKG4).
 
 ##### Attribution
 
