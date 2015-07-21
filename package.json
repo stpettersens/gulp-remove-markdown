@@ -1,0 +1,38 @@
+{
+  "name": "gulp-remove-markdown",
+  "version": "1.0.0",
+  "description": "Gulp plug-in to remove Markdown from a file",
+  "license": "MIT",
+  "repository": "http://github.com/stpettersens/gulp-markdown",
+  "author": {
+    "name": "Sam Saint-Pettersen",
+    "email": "s.stpettersen+github@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha test.js --timeout 5000"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "markdown",
+    "remove-markdown",
+    "md",
+    "txt",
+    "convert",
+    "markup",
+    "plaintext"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "remove-markdown": "0.0.6",
+    "through2": "^0.6.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
