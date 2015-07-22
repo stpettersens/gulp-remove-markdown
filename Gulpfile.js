@@ -1,6 +1,6 @@
 /*
-Test gulp-remove-markdown plug-in in a Gulp file,
-this file is also used to generate this project's readme.txt
+Test gulp-remove-markdown plug-in in a Gulpfile.
+This file is also used to generate this project's README.txt
 for the npm package.
 */
 var gulp = require('gulp'),
