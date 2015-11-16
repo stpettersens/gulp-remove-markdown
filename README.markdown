@@ -1,5 +1,5 @@
 ### gulp-remove-markdown
-> Gulp plug-in to remove Markdown from a file (via [remove-markdown](https://github.com/stiang/remove-markdown)).
+> :tropical_drink: Gulp plug-in to remove Markdown from a file (via [remove-markdown](https://github.com/stiang/remove-markdown)).
 
 [![Build Status](https://travis-ci.org/stpettersens/gulp-remove-markdown.png?branch=master)](https://travis-ci.org/stpettersens/gulp-remove-markdown)
 [![npm version](https://badge.fury.io/js/gulp-remove-markdown.svg)](http://npmjs.com/package/gulp-remove-markdown)
